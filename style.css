@@ -1,0 +1,84 @@
+
+* {
+  box-sizing: border-box;  
+  -moz-box-sizing: border-box;  
+  -webkit-box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    ". posts ."
+    "footer footer footer";
+  grid-template-rows: 50px 1fr 60px;
+  grid-template-columns: 20% 1fr 20%;
+  height: 100vh;
+  background: #d6d6d6;
+}
+button{
+  border-width: 2px;
+  box-shadow: 5px 5px;
+}
+
+#pageHeader {
+  position: sticky;
+  top: 0;
+  grid-area: header;
+  background: #496a8f;
+  color:#eee;
+  padding: 10px;
+}
+#mainArticle {  
+  grid-area: posts;
+  background: white;
+  display: flex; 
+  flex-direction: column;
+}
+#pageFooter {
+  position: sticky;
+  bottom: 0;
+  grid-area: footer;
+  background: #496a8f;
+  color:#eee;
+  padding: 10px;
+}
+
+
+.roundAva {
+  border-radius: 100px; 
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+.marginRight {
+  margin-right: 12px
+}
+.icon {
+  width: 10px;
+  height: 10px;
+}
+.flexSpaceBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+   
+.newsHeaderBlock{
+  background: rgb(216, 88, 88);
+  padding: 10px;
+}
+.estimateBlock{
+  background: rgb(55, 192, 55);
+  padding: 10px;
+}
+.commentsBlock{
+  background: rgb(96, 96, 230);
+}
+.commentsBlock__post{
+  border: 2px;
+  padding: 10px;
+}
+
+
